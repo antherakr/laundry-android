@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9FE2BF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvLaundry"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/inter_extrabold"
+        android:text="LAUNDRY"
+        android:textAlignment="center"
+        android:textColor="#008080"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvLaundry1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:fontFamily="@font/inter_extrabold"
+        android:text="Selamat datang, Admin!"
+        android:textAlignment="center"
+        android:textColor="#008080"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLaundry"
+        app:layout_constraintTop_toTopOf="parent" />
+    <HorizontalScrollView
+        android:id="@+id/horizontalsv"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvLaundry1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:layout_width="1.5in"
+                android:layout_height="1in"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="19dp"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:src="@drawable/asset_1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#C61F3333"
+                    android:fontFamily="@font/inter_bold"
+                    android:gravity="center|bottom"
+                    android:text="Laundry A"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="1.5in"
+                android:layout_height="1in"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="19dp"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:src="@drawable/asset_1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#C61F3333"
+                    android:fontFamily="@font/inter_bold"
+                    android:gravity="center|bottom"
+                    android:text="Laundry B"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="1.5in"
+                android:layout_height="1in"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="19dp"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:src="@drawable/asset_1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#C61F3333"
+                    android:fontFamily="@font/inter_bold"
+                    android:gravity="center|bottom"
+                    android:text="Laundry C"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:weightSum="2"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalsv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CvLayanan"
+            android:layout_width="180dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="25dp"
+            app:cardBackgroundColor="#008080"
+            android:layout_marginStart="20dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:src="@drawable/layanan"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Layanan"
+                android:fontFamily="@font/inter"
+                android:layout_marginBottom="8dp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="bottom"
+                android:textAlignment="center"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CvTransaksi"
+            android:layout_width="180dp"
+            android:layout_height="170dp"
+            app:cardBackgroundColor="#008080"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:src="@drawable/transaksi"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Transaksi"
+                android:textColor="@color/white"
+                android:fontFamily="@font/inter"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="bottom"
+                android:textAlignment="center"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintTop_toBottomOf="@+id/linear1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CvRiwayat"
+            app:cardCornerRadius="25dp"
+            android:layout_width="180dp"
+            android:layout_height="170dp"
+            app:cardBackgroundColor="#008080"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/riwayat"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Riwayat"
+                android:fontFamily="@font/inter"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/white"
+                android:layout_gravity="bottom"
+                android:textAlignment="center"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CvLaporan"
+            android:layout_width="180dp"
+            android:layout_height="170dp"
+            app:cardBackgroundColor="#008080"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/laporan"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Laporan"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

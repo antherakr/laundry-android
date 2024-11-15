@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9FE2BF"
+    tools:context=".Transaksi">
+
+    <!-- Header Text -->
+    <TextView
+        android:id="@+id/tvLaundry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/inter_extrabold"
+        android:text="TRANSAKSI"
+        android:textAlignment="center"
+        android:textColor="#008080"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Main CardView for Input Fields -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:padding="20dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tvLaundry"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Input Nama Pelanggan -->
+            <EditText
+                android:id="@+id/etNamaPelanggan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan Nama Pelanggan"
+                android:textColor="@color/black"
+                android:textColorHint="#808080"
+                android:fontFamily="@font/inter"
+                android:padding="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:backgroundTint="#008080"
+                android:textSize="16sp" />
+
+            <!-- Spinner Layanan (Dropdown) -->
+            <Spinner
+                android:id="@+id/spinnerLayanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="12dp"
+                android:backgroundTint="#008080"
+                android:spinnerMode="dropdown" />
+
+            <!-- Layout untuk Input Satuan dan Satuan Label (kg/pcs) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
+
+                <!-- Input Satuan Layanan -->
+                <EditText
+                    android:id="@+id/etSatuan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="0"
+                    android:textColor="@color/black"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:backgroundTint="#008080"
+                    android:textSize="16sp"
+                    android:textColorHint="#808080" />
+
+                <!-- Label Satuan (kg/pcs) -->
+                <TextView
+                    android:id="@+id/tvSatuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:text="kg"
+                    android:textColor="#008080"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/inter" />
+            </LinearLayout>
+
+
+
+            <!-- Harga Layanan -->
+            <TextView
+                android:id="@+id/tvHargaLayanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Harga: -"
+                android:textColor="#008080"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/inter" />
+
+            <!-- Tanggal Transaksi -->
+            <TextView
+                android:id="@+id/tvTanggalTransaksi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="Tanggal: -"
+                android:textColor="#008080"
+                android:textSize="16sp"
+                android:fontFamily="@font/inter" />
+
+
+            <!-- Button Simpan -->
+            <Button
+                android:id="@+id/btnSimpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Simpan Transaksi"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:backgroundTint="#008080"
+                android:fontFamily="@font/inter_bold"
+                android:padding="12dp"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

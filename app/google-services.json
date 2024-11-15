@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "316358143495",
+    "project_id": "laundry-3df75",
+    "storage_bucket": "laundry-3df75.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316358143495:android:bb345e915e08d8a660c4a2",
+        "android_client_info": {
+          "package_name": "com.ramadhani.laundry"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0aAkX96_7vRHFD6G1JmobfvrYFc7T6dc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
